@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/memoryBank/static/css/main.4734c133.css",
+    "main.css": "/memoryBank/static/css/main.71e47971.css",
     "main.js": "/memoryBank/static/js/main.d648e7f9.js",
     "static/js/453.ee622ae0.chunk.js": "/memoryBank/static/js/453.ee622ae0.chunk.js",
     "index.html": "/memoryBank/index.html",
-    "main.4734c133.css.map": "/memoryBank/static/css/main.4734c133.css.map",
+    "main.71e47971.css.map": "/memoryBank/static/css/main.71e47971.css.map",
     "main.d648e7f9.js.map": "/memoryBank/static/js/main.d648e7f9.js.map",
     "453.ee622ae0.chunk.js.map": "/memoryBank/static/js/453.ee622ae0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4734c133.css",
+    "static/css/main.71e47971.css",
     "static/js/main.d648e7f9.js"
   ]
 }
