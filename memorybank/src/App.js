@@ -7,16 +7,18 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();  // prevent page reload :contentReference[oaicite:10]{index=10}
 
-    const payload = { note, mentalScore: parseFloat(mentalScore) };
+    const payload = { "note": note, "mentalScore": mentalScore };  // payload to send to Flask endpoint :contentReference[oaicite:11]{index=11}
 
     const res = await fetch('https://flaskmemoryhandler-1c69fbba4651.herokuapp.com/api/add', {   // POST to Flask endpoint :contentReference[oaicite:11]{index=11}
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+      // make the bodyt the payload json
+      body: JSON.stringify(payload),
     });
 
     if (res.ok) {
-      alert('Entry added!');
+      //add text box to show success message
+      document.getElementById('messageholder').innerText = 'Entry added successfully! This is the time it was added: '+new Date().toLocaleString(); // show timestamp
       setNote('');
       setMentalScore('');
     } else {
@@ -53,6 +55,7 @@ function App() {
         </div>
         <button type="submit">Submit</button>
       </form>
+      <p id='messageholder'></p>
     </div>
   );
 }
