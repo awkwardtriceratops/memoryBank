@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import './App.css';
 function App() {
   const [note, setNote] = useState('');
   const [mentalScore, setMentalScore] = useState('');
@@ -18,7 +18,8 @@ function App() {
 
     if (res.ok) {
       //add text box to show success message
-      document.getElementById('messageholder').innerText = 'Entry added successfully! This is the time it was added: '+new Date().toLocaleString(); // show timestamp
+      //document.getElementById('messageholder').innerText = 'Entry added successfully! This is the time it was added:'+new Date().toLocaleString() + ' The message was: ' + note + ' and the mental score was: ' + mentalScore;
+      document.getElementById('messageholder').innerHTML = 'Entry added successfully! This is the time it was added:<br><br> ' + new Date().toLocaleString() + '<br><br>The message was: <br><br>' + note + '<br><br>and the mental score was: <br><br>' + mentalScore;
       setNote('');
       setMentalScore('');
     } else {
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div style={{ padding: '2rem' }}>
-      <h1>Add Memory</h1>
+      <h1 className='mainheader'>Add Memory/Gratitude</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>
@@ -46,7 +47,6 @@ function App() {
             Mental Score:<br/>
             <input
               type="number"
-              step="0.1"
               value={mentalScore}
               onChange={e => setMentalScore(e.target.value)}
               required
