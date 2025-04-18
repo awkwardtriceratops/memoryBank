@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/memorybank/static/css/main.e6c13ad2.css",
-    "main.js": "/memorybank/static/js/main.b5bf44be.js",
-    "static/js/453.ee622ae0.chunk.js": "/memorybank/static/js/453.ee622ae0.chunk.js",
-    "index.html": "/memorybank/index.html",
-    "main.e6c13ad2.css.map": "/memorybank/static/css/main.e6c13ad2.css.map",
-    "main.b5bf44be.js.map": "/memorybank/static/js/main.b5bf44be.js.map",
-    "453.ee622ae0.chunk.js.map": "/memorybank/static/js/453.ee622ae0.chunk.js.map"
+    "main.css": "/memoryBank/static/css/main.e6c13ad2.css",
+    "main.js": "/memoryBank/static/js/main.51cdec33.js",
+    "static/js/453.ee622ae0.chunk.js": "/memoryBank/static/js/453.ee622ae0.chunk.js",
+    "index.html": "/memoryBank/index.html",
+    "main.e6c13ad2.css.map": "/memoryBank/static/css/main.e6c13ad2.css.map",
+    "main.51cdec33.js.map": "/memoryBank/static/js/main.51cdec33.js.map",
+    "453.ee622ae0.chunk.js.map": "/memoryBank/static/js/453.ee622ae0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.b5bf44be.js"
+    "static/js/main.51cdec33.js"
   ]
 }
