@@ -9,7 +9,7 @@ function App() {
 
     const payload = { note, mentalScore: parseFloat(mentalScore) };
 
-    const res = await fetch('/api/add', {   // POST to Flask endpoint :contentReference[oaicite:11]{index=11}
+    const res = await fetch('https://flaskmemoryhandler-1c69fbba4651.herokuapp.com/api/add', {   // POST to Flask endpoint :contentReference[oaicite:11]{index=11}
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
